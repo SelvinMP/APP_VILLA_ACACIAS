@@ -1,0 +1,13 @@
+com.example.villa_las_acacias.app-jetified-window-java-1.0.0-beta04-0 C:\Users\selvi\.gradle\caches\transforms-3\7a4c6424b9ac40c5221c60c7b1743df5\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.villa_las_acacias.app-jetified-annotation-experimental-1.1.0-1 C:\Users\selvi\.gradle\caches\transforms-3\e69d48417517e25361ce30ce5eeec8ac\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.villa_las_acacias.app-jetified-window-1.0.0-beta04-2 C:\Users\selvi\.gradle\caches\transforms-3\f55ed073faea651a9045c431b855a2d2\transformed\jetified-window-1.0.0-beta04\res
+com.example.villa_las_acacias.app-core-1.6.0-3 C:\Users\selvi\.gradle\caches\transforms-3\fc29f8815cd1488ac8758c307e7e746a\transformed\core-1.6.0\res
+com.example.villa_las_acacias.app-debug-4 C:\Users\selvi\Music\villa_las_acacias\android\app\src\debug\res
+com.example.villa_las_acacias.app-main-5 C:\Users\selvi\Music\villa_las_acacias\android\app\src\main\res
+com.example.villa_las_acacias.app-pngs-6 C:\Users\selvi\Music\villa_las_acacias\build\app\generated\res\pngs\debug
+com.example.villa_las_acacias.app-resValues-7 C:\Users\selvi\Music\villa_las_acacias\build\app\generated\res\resValues\debug
+com.example.villa_las_acacias.app-rs-8 C:\Users\selvi\Music\villa_las_acacias\build\app\generated\res\rs\debug
+com.example.villa_las_acacias.app-mergeDebugResources-9 C:\Users\selvi\Music\villa_las_acacias\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.villa_las_acacias.app-mergeDebugResources-10 C:\Users\selvi\Music\villa_las_acacias\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.villa_las_acacias.app-merged_res-11 C:\Users\selvi\Music\villa_las_acacias\build\app\intermediates\merged_res\debug
+com.example.villa_las_acacias.app-packaged_res-12 C:\Users\selvi\Music\villa_las_acacias\build\shared_preferences_android\intermediates\packaged_res\debug

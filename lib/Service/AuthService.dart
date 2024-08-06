@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
-  final String apiUrl = 'http://192.168.43.126:3000/';
+  final String apiUrl = 'http://192.168.0.14:3000/';
 
   Future<Map<String, dynamic>> login(String username, String password) async {
   print('Iniciando sesión con usuario: $username');
@@ -297,32 +297,25 @@ class AuthService {
     }
   }
 
-  Future<Map<String, dynamic>> insertVisit(
-      int userId, String visitorName, String dniVisitor, int numPersons, String numPlaca, String dateTime) async {
-    try {
-      final response = await http.post(
-        Uri.parse('${apiUrl}registerVisit'), // Asegúrate de que esta URL sea correcta
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode({
-          'ID_PERSONA': userId,
-          'NOMBRE_VISITANTE': visitorName,
-          'DNI_VISITANTE': dniVisitor,
-          'NUM_PERSONAS': numPersons,
-          'NUM_PLACA': numPlaca,
-          'FECHA_HORA': dateTime,
-        }),
-      );
+ Future<Map<String, dynamic>> insertVisit(String nombreencargado, String visitorName, String dniVisitor, int numPersons, String numPlaca, String dateTime) async {
+    final url = Uri.parse('${apiUrl}registerVisit');
+    final response = await http.post(
+      url,
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'NOMBRE_PERSONA': nombreencargado,
+        'NOMBRE_VISITANTE': visitorName,
+        'DNI_VISITANTE': dniVisitor,
+        'NUM_PERSONAS': numPersons,
+        'NUM_PLACA': numPlaca,
+        'FECHA_HORA': dateTime,
+      }),
+    );
 
-      if (response.statusCode == 201) {
-        final data = jsonDecode(response.body);
-        return {'message': data['message'], 'qrCode': data['qrCode']};
-      } else {
-        return {
-          'error': jsonDecode(response.body)['message'] ?? 'Registro de visita fallido'
-        };
-      }
-    } catch (e) {
-      return {'error': 'Error al intentar registrar la visita'};
+    if (response.statusCode == 201) {
+      return jsonDecode(response.body);
+    } else {
+      return {'error': 'Error al registrar la visita'};
     }
   }
 
